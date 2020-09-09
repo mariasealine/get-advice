@@ -1,0 +1,95 @@
+body {
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    min-height: 800px;
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    font-weight: 500;
+    height: 50px;
+    width: 300px;
+    margin: 80px 0 20px 0;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: #907034;
+}
+
+button:hover {
+    background-color: #574011;
+}
+
+.display-advice {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding-top: 60px;
+    width: 85%;
+}
+
+.star {
+    background: url(./assets/star.png);
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 40%;
+    -webkit-animation: growing-obj 2s linear infinite; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: growing-obj 2s linear infinite; /* Firefox < 16 */
+    -ms-animation: growing-obj 2s linear infinite; /* Internet Explorer */
+    -o-animation: growing-obj 2s linear infinite; /* Opera < 12.1 */
+    animation: growing-obj 2s linear infinite;
+}
+
+@keyframes growing-obj {
+    0% { transform: scale(1)  }
+    50%   { transform: scale(1.5) }
+    100% { transform: scale(1) }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes growing-obj {
+    0% { transform: scale(1)  }
+    50%   { transform: scale(1.5)  }
+    100% { transform: scale(1)  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes growing-obj {
+    0% { transform: scale(1)   }
+    50%   { transform: scale(1.5)  }
+    100% { transform: scale(1)  }
+}
+/* Internet Explorer */
+@-ms-keyframes growing-obj {
+    0% { transform: scale(1);  }
+    50%   { transform: scale(1.5); }
+    100% { transform: scale(1);  }
+}
+/* Opera < 12.1 */
+@-o-keyframes growing-obj {
+    0% { transform: scale(1);  }
+    50%   { transform: scale(1.5); }
+    100% { transform: scale(1);  }
+}
+
+
+
