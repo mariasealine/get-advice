@@ -46,7 +46,7 @@ const randomBottom = () => {
     return Math.floor(Math.random() * 40);
 }
 const randomLeft = () => {
-    return Math.floor(Math.random() * 95);
+    return Math.random() * (90 - 10) + 10;
 }
 const randomStar = () => {
     return Math.floor(Math.random() * 30);
